@@ -1,0 +1,34 @@
+@QuizAPI_HostAddress = http://localhost:5075
+
+POST {{QuizAPI_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Teacher One",
+  "email": "teacher@test.com",
+  "password": "Test@123",
+  "role": "Teacher"
+}
+
+# {
+#   "fullName": "Student One",
+#   "email": "student@example.com",
+#   "password": "Test@123",
+#   "role": "Student"
+# }
+
+###
+
+POST {{QuizAPI_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "teacher@test.com",
+  "password": "Test@123"
+}
+
+
+GET {{QuizAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

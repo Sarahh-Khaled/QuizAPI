@@ -1,0 +1,8 @@
+﻿bin/
+obj/
+.vs/
+*.user
+.env
+.env.*
+appsettings.Development.json
+secrets.json
